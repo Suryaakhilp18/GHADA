@@ -1,4 +1,4 @@
-# 🏺 GHADA
+﻿# GHADA
 
 ### Save First. Invest Second. Borrow Last.
 
@@ -8,10 +8,10 @@
 
 <p align="center">
   <a href="https://ghada-beige.vercel.app/">
-    <img src="https://img.shields.io/badge/🚀%20LIVE%20DEMO-GHADA-8B6914?style=for-the-badge" alt="Live Demo">
+    <img src="https://img.shields.io/badge/Live%20DEMO-GHADA-8B6914?style=for-the-badge" alt="Live Demo">
   </a>
   <a href="https://github.com/Suryaakhilp18/GHADA">
-    <img src="https://img.shields.io/badge/💻%20SOURCE%20CODE-GITHUB-181717?style=for-the-badge&logo=github" alt="Source Code">
+    <img src="https://img.shields.io/badge/Source%20CODE-GITHUB-181717?style=for-the-badge&logo=github" alt="Source Code">
   </a>
 </p>
 
@@ -25,7 +25,7 @@
 
 ---
 
-## 📖 Table of Contents
+##  Table of Contents
 
 - [What is GHADA?](#-what-is-ghada)
 - [The Problem](#-the-problem)
@@ -54,7 +54,7 @@
 
 ---
 
-## 🌟 What is GHADA?
+##  What is GHADA?
 
 **GHADA** is a fintech product concept and working web prototype built around a simple principle:
 
@@ -66,13 +66,13 @@ The idea is simple:
 
 ```text
 Small savings
-     ↓
+     
 Consistent habit
-     ↓
+     
 Emergency safety net
-     ↓
+     
 Better financial confidence
-     ↓
+     
 Better financial decisions
 ```
 
@@ -82,7 +82,7 @@ It brings emergency savings, financial-health tools, AI assistance, budgeting, g
 
 ---
 
-## 🎯 The Problem
+##  The Problem
 
 For a person with low or irregular income, even a relatively small unexpected expense can create immediate financial pressure.
 
@@ -90,17 +90,17 @@ A common cycle can look like:
 
 ```text
 Unexpected emergency
-        ↓
+        
 No emergency savings
-        ↓
+        
 Immediate borrowing
-        ↓
+        
 Repayment pressure
-        ↓
+        
 Financial stress
-        ↓
+        
 Another emergency
-        ↓
+        
 More borrowing
 ```
 
@@ -114,17 +114,17 @@ It is to help them start with amounts they can realistically afford and build co
 
 ---
 
-## 🏺 The GHADA Philosophy
+##  The GHADA Philosophy
 
-### 01 — SAVE FIRST 🛡️
+### 01  SAVE FIRST 
 
 Build an emergency fund before prioritizing wealth creation.
 
-### 02 — INVEST SECOND 📈
+### 02  INVEST SECOND 
 
 Once a basic safety cushion exists, introduce appropriate financial education and investment pathways.
 
-### 03 — BORROW LAST 💳
+### 03  BORROW LAST 
 
 Borrowing may sometimes be necessary, but it should not automatically be the first response to every small emergency.
 
@@ -132,35 +132,35 @@ The intended journey:
 
 ```text
 SAVE
-  ↓
+  
 PROTECT
-  ↓
+  
 INVEST
-  ↓
+  
 BORROW WHEN NECESSARY
 ```
 
 ---
 
-## ⚙️ How GHADA Works
+##  How GHADA Works
 
 A user can begin with a small amount instead of being told to immediately save a large target.
 
 For example:
 
 ```text
-₹20
- ↓
-₹50
- ↓
-₹100
- ↓
-₹300
- ↓
-₹1,000
- ↓
-₹3,000
- ↓
+20
+ 
+50
+ 
+100
+ 
+300
+ 
+1,000
+ 
+3,000
+ 
 Emergency Target
 ```
 
@@ -178,14 +178,14 @@ The goal is not just to **save once**.
 It is to create a repeatable cycle:
 
 ```text
-SAVE → EMERGENCY → USE → REBUILD → SAVE AGAIN
+SAVE  EMERGENCY  USE  REBUILD  SAVE AGAIN
 ```
 
 ---
 
-## 🚀 Core Features
+##  Core Features
 
-### 🛡️ Emergency Fund
+###  Emergency Fund
 
 - Set an emergency-fund target
 - Track progress
@@ -195,7 +195,7 @@ SAVE → EMERGENCY → USE → REBUILD → SAVE AGAIN
 - Access an emergency withdrawal flow
 - Rebuild the fund after an emergency
 
-### 📊 Financial Health
+###  Financial Health
 
 - View financial-health indicators
 - Understand savings progress
@@ -203,7 +203,7 @@ SAVE → EMERGENCY → USE → REBUILD → SAVE AGAIN
 - Review financial activity
 - Receive financial suggestions
 
-### 🤖 AI Coach
+###  AI Coach
 
 - Ask financial questions
 - Get simple explanations
@@ -211,59 +211,59 @@ SAVE → EMERGENCY → USE → REBUILD → SAVE AGAIN
 - Understand financial concepts
 - Get reminders and personalized suggestions
 
-### 💰 AI Budget
+###  AI Budget
 
 - Explore budgeting guidance
 - Understand spending patterns
 - Work toward healthier financial habits
 
-### 📒 Expense Tracker
+###  Expense Tracker
 
 - Record and review expenses
 - Understand spending activity
 - Build awareness around everyday money use
 
-### 🧾 Bills Planner
+###  Bills Planner
 
 - Organize upcoming bills
 - Improve visibility of recurring obligations
 - Reduce the chance of missing important payments
 
-### 💳 Debt Organizer
+###  Debt Organizer
 
 - Organize debt information
 - Improve awareness of repayment obligations
 - Support better financial planning
 
-### 🎯 Goals
+###  Goals
 
 - Set financial goals
 - Track progress
 - Celebrate milestones
 
-### 🛡️ Fraud Safety
+###  Fraud Safety
 
 - Learn about financial safety
 - Recognize potential fraud risks
 - Encourage safer financial behavior
 
-### 📚 Learn
+###  Learn
 
 - Access simplified financial education
 - Understand savings, budgeting, borrowing, and related concepts
 
-### 📄 Document Analyzer
+###  Document Analyzer
 
 - Analyze supported financial-document experiences
 - Help users understand important information more easily
 
-### 🧰 Money Tools
+###  Money Tools
 
 A collection of financial utilities designed to make everyday financial tasks easier.
 
 ---
 
-## 🤖 AI Assistance
+##  AI Assistance
 
 AI is a central part of the GHADA experience.
 
@@ -298,7 +298,7 @@ It should not independently make regulated financial decisions on behalf of user
 
 ---
 
-## 🌐 Multilingual Architecture
+##  Multilingual Architecture
 
 GHADA's language architecture currently defines these languages:
 
@@ -327,25 +327,25 @@ Before production use, translations should be professionally reviewed and locali
 
 ---
 
-## 🧰 One-Stop Financial Hub
+##  One-Stop Financial Hub
 
 GHADA brings multiple financial experiences into one application.
 
 ```text
-                         ┌───────────────┐
-                         │     GHADA     │
-                         │ Financial Hub │
-                         └───────┬───────┘
-                                 │
-       ┌──────────┬──────────────┼──────────────┬──────────┐
-       ↓          ↓              ↓              ↓          ↓
+                         
+                              GHADA     
+                          Financial Hub 
+                         
+                                 
+       
+                                                       
    Emergency    AI Coach      Budget &       Goals      Learn
       Fund                     Expenses
-       │          │              │              │          │
-       └──────────┴──────────────┼──────────────┴──────────┘
-                                  ↓
+                                                       
+       
+                                  
                            Financial Health
-                                  ↓
+                                  
                          Better Decisions
 ```
 
@@ -375,7 +375,7 @@ GHADA brings multiple financial experiences into one application.
 
 ---
 
-## 🏡 Rural-First Vision
+##  Rural-First Vision
 
 GHADA is designed with underserved and irregular-income users in mind.
 
@@ -405,17 +405,17 @@ The long-term product vision can explore:
 
 ---
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 ### Frontend
 
 | Technology | Role |
 |---|---|
-| ⚛️ React | Component-based user interface |
-| 🔷 TypeScript | Type-safe application development |
-| ⚡ Vite | Development server and production build |
-| 🎨 Tailwind CSS | Styling and responsive UI |
-| 🟨 JavaScript/TypeScript ecosystem | Application tooling |
+|  React | Component-based user interface |
+|  TypeScript | Type-safe application development |
+|  Vite | Development server and production build |
+|  Tailwind CSS | Styling and responsive UI |
+|  JavaScript/TypeScript ecosystem | Application tooling |
 
 ### Application Layer
 
@@ -440,97 +440,97 @@ The long-term product vision can explore:
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 The current prototype follows a frontend-oriented architecture:
 
 ```text
                          USER
-                           │
-                           ▼
-                  ┌─────────────────┐
-                  │ React Interface │
-                  └────────┬────────┘
-                           │
-            ┌──────────────┼──────────────┐
-            ↓              ↓              ↓
+                           
+                           
+                  
+                   React Interface 
+                  
+                           
+            
+                                        
         Components       Pages         Context
-            │              │              │
-            └──────────────┼──────────────┘
-                           ↓
+                                        
+            
+                           
                     Application Logic
-                           │
-              ┌────────────┴────────────┐
-              ↓                         ↓
+                           
+              
+                                       
         AI Engine                 Language Detection
-              │                         │
-              └────────────┬────────────┘
-                           ↓
+                                       
+              
+                           
                      Prototype Data
 ```
 
-### Production architecture — future
+### Production architecture  future
 
 A production-grade version would add:
 
 ```text
 User
- ↓
+ 
 Web / Mobile / IVR / USSD
- ↓
+ 
 Secure Backend API
- ↓
+ 
 Authentication + Authorization
- ↓
+ 
 Application Services
- ├── Savings
- ├── AI
- ├── Budgeting
- ├── Goals
- ├── Notifications
- └── Financial Health
- ↓
+  Savings
+  AI
+  Budgeting
+  Goals
+  Notifications
+  Financial Health
+ 
 Database + Secure Storage
- ↓
+ 
 Appropriate regulated financial partners
 ```
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```text
 GHADA/
-│
-├── src/
-│   ├── components/
-│   │   ├── common/
-│   │   ├── features/
-│   │   └── layout/
-│   │
-│   ├── context/
-│   ├── data/
-│   ├── pages/
-│   ├── services/
-│   ├── types/
-│   ├── App.tsx
-│   ├── index.css
-│   └── main.tsx
-│
-├── index.html
-├── package.json
-├── package-lock.json
-├── postcss.config.js
-├── tailwind.config.js
-├── tsconfig.json
-├── vite.config.ts
-├── .gitignore
-└── README.md
+
+ src/
+    components/
+       common/
+       features/
+       layout/
+   
+    context/
+    data/
+    pages/
+    services/
+    types/
+    App.tsx
+    index.css
+    main.tsx
+
+ index.html
+ package.json
+ package-lock.json
+ postcss.config.js
+ tailwind.config.js
+ tsconfig.json
+ vite.config.ts
+ .gitignore
+ README.md
 ```
 
 ---
 
-## 💻 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -563,7 +563,7 @@ Vite will display the local development URL in the terminal.
 
 ---
 
-## 🔨 Available Commands
+##  Available Commands
 
 | Command | Purpose |
 |---|---|
@@ -575,11 +575,11 @@ Vite will display the local development URL in the terminal.
 
 ```text
 npm run build
-      ↓
+      
 TypeScript check
-      ↓
+      
 Vite production build
-      ↓
+      
 dist/
 ```
 
@@ -587,30 +587,30 @@ The production build has been successfully verified locally.
 
 ---
 
-## ☁️ Deployment
+##  Deployment
 
 GHADA is connected to GitHub and Vercel.
 
 ```text
 Local Development
-       │
-       │ git push
-       ▼
+       
+        git push
+       
 GitHub / main
-       │
-       │ automatic deployment
-       ▼
+       
+        automatic deployment
+       
 Vercel
-       │
-       ▼
+       
+       
 Live GHADA Application
 ```
 
-### 🚀 Live Demo
+###  Live Demo
 
 **https://ghada-beige.vercel.app/**
 
-### 💻 Source Code
+###  Source Code
 
 **https://github.com/Suryaakhilp18/GHADA**
 
@@ -618,7 +618,7 @@ Every new push to `main` can trigger a Vercel deployment.
 
 ---
 
-## 🔄 Git Workflow
+##  Git Workflow
 
 Typical workflow:
 
@@ -643,7 +643,7 @@ Update documentation
 
 ---
 
-## 💼 Business Model
+##  Business Model
 
 The proposed long-term business model is **B2B2C**.
 
@@ -668,7 +668,7 @@ The intention is to create a sustainable business while keeping the core experie
 
 ---
 
-## 🎯 Pilot Strategy
+##  Pilot Strategy
 
 GHADA should not attempt to launch across an entire market immediately.
 
@@ -690,7 +690,7 @@ A focused pilot could begin with a specific community and a manageable number of
 - User satisfaction
 - Reported dependence on informal borrowing
 
-### ⭐ North-Star Impact Metric
+###  North-Star Impact Metric
 
 > **How many users are able to handle a small emergency without depending on high-cost informal borrowing?**
 
@@ -698,7 +698,7 @@ This is more meaningful for GHADA's mission than measuring downloads alone.
 
 ---
 
-## 🔐 Security & Privacy
+##  Security & Privacy
 
 Financial products require strong security and privacy practices.
 
@@ -714,7 +714,7 @@ GHADA's intended principles include:
 - Use appropriate regulated financial infrastructure for regulated financial activity
 - Keep AI assistance appropriately governed
 
-### ⚠️ Prototype authentication
+###  Prototype authentication
 
 The current application contains prototype/demo authentication behavior.
 
@@ -724,7 +724,7 @@ Before real users are onboarded, authentication should be upgraded with appropri
 
 ---
 
-## 🧪 Prototype vs Production
+##  Prototype vs Production
 
 GHADA is currently a **working product prototype**, not a regulated financial service.
 
@@ -751,35 +751,35 @@ This distinction is intentional: the repository demonstrates the **product exper
 
 ---
 
-## 📊 Current Status
+##  Current Status
 
 | Area | Status |
 |---|:---:|
-| React + TypeScript application | ✅ |
-| Responsive web experience | ✅ |
-| Emergency-fund experience | ✅ Prototype |
-| Financial dashboard | ✅ Prototype |
-| AI assistant experience | ✅ Prototype |
-| Multilingual architecture | ✅ |
-| Financial tools | ✅ Prototype |
-| Git repository | ✅ |
-| GitHub repository | ✅ |
-| Production build | ✅ |
-| Vercel deployment | ✅ |
-| Live application | ✅ |
-| Full professional translations | 🔄 |
-| Production authentication | 🔄 |
-| Real database | 🔄 |
-| Production AI API | 🔄 |
-| Real financial integrations | 🔄 |
-| Security audit | 🔄 |
-| Real-world pilot | 🔄 |
+| React + TypeScript application |  |
+| Responsive web experience |  |
+| Emergency-fund experience |  Prototype |
+| Financial dashboard |  Prototype |
+| AI assistant experience |  Prototype |
+| Multilingual architecture |  |
+| Financial tools |  Prototype |
+| Git repository |  |
+| GitHub repository |  |
+| Production build |  |
+| Vercel deployment |  |
+| Live application |  |
+| Full professional translations |  |
+| Production authentication |  |
+| Real database |  |
+| Production AI API |  |
+| Real financial integrations |  |
+| Security audit |  |
+| Real-world pilot |  |
 
 ---
 
-## 🗺️ Roadmap
+##  Roadmap
 
-### Phase 1 — Working Prototype
+### Phase 1  Working Prototype
 
 - [x] Core GHADA interface
 - [x] Dashboard
@@ -790,7 +790,7 @@ This distinction is intentional: the repository demonstrates the **product exper
 - [x] GitHub repository
 - [x] Vercel deployment
 
-### Phase 2 — Product Foundation
+### Phase 2  Product Foundation
 
 - [ ] Production backend
 - [ ] Secure authentication
@@ -800,7 +800,7 @@ This distinction is intentional: the repository demonstrates the **product exper
 - [ ] Automated testing
 - [ ] Error monitoring
 
-### Phase 3 — Financial Infrastructure
+### Phase 3  Financial Infrastructure
 
 - [ ] Appropriate regulated financial partnerships
 - [ ] Secure account infrastructure
@@ -808,7 +808,7 @@ This distinction is intentional: the repository demonstrates the **product exper
 - [ ] Appropriate financial-product integrations
 - [ ] Compliance and legal review
 
-### Phase 4 — Pilot
+### Phase 4  Pilot
 
 - [ ] Select target community
 - [ ] Recruit pilot users
@@ -817,7 +817,7 @@ This distinction is intentional: the repository demonstrates the **product exper
 - [ ] Measure emergency-fund outcomes
 - [ ] Iterate based on user feedback
 
-### Phase 5 — Scale
+### Phase 5  Scale
 
 - [ ] Rural distribution partnerships
 - [ ] IVR / USSD exploration
@@ -827,7 +827,7 @@ This distinction is intentional: the repository demonstrates the **product exper
 
 ---
 
-## 🏆 Why GHADA?
+##  Why GHADA?
 
 GHADA is built around a simple behavioral insight:
 
@@ -836,13 +836,13 @@ GHADA is built around a simple behavioral insight:
 Instead of starting the user's journey with:
 
 ```text
-INVEST → BORROW → REPAY
+INVEST  BORROW  REPAY
 ```
 
 GHADA proposes:
 
 ```text
-SAVE → PROTECT → INVEST → BORROW WHEN NECESSARY
+SAVE  PROTECT  INVEST  BORROW WHEN NECESSARY
 ```
 
 The product aims to make that journey:
@@ -859,7 +859,7 @@ The product aims to make that journey:
 
 ---
 
-## 👨‍💻 Developer
+##  Developer
 
 ### Developed by **Surya Akhil**
 
@@ -867,7 +867,7 @@ GHADA is an independent fintech product concept and working web prototype focuse
 
 ---
 
-## 📜 License
+##  License
 
 No open-source license has currently been specified for this repository.
 
@@ -875,7 +875,7 @@ Until a license is added, the repository should **not** be assumed to grant perm
 
 ---
 
-## ⭐ GHADA
+## GHADA
 
 <p align="center">
 
@@ -888,3 +888,4 @@ Until a license is added, the repository should **not** be assumed to grant perm
 <strong>Developed by Surya Akhil</strong>
 
 </p>
+
