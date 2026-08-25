@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GHADA Launcher</title>
+  <meta http-equiv="refresh" content="0; url=http://localhost:3000/">
+  <style>
+    body {
+      background-color: #0D0D0D;
+      color: #F6F1E8;
+      font-family: system-ui, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-h: 100vh;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+    .card {
+      background: #171717;
+      border: 1px solid #D4AF6A;
+      padding: 30px;
+      border-radius: 20px;
+      max-width: 400px;
+      box-shadow: 0 0 25px rgba(212, 175, 106, 0.2);
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #D4AF6A;
+      color: #0D0D0D;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2 style="color: #D4AF6A;">GHADA Super-App</h2>
+    <p>Opening app on live server...</p>
+    <a href="http://localhost:3000/" class="btn">Click Here to Open GHADA</a>
+  </div>
+  <script>
+    window.location.href = "http://localhost:3000/";
+  </script>
+</body>
+</html>
