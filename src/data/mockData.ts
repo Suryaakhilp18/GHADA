@@ -383,7 +383,13 @@ export const TRANSLATIONS: Record<Language, Record<string, string>> = {
     saveFirst: 'आधी बचत',
     investSecond: 'नंतर गुंतवणूक',
     borrowLast: 'शेवटी कर्ज',
-  }
+  },
+  ml: {},
+  bn: {},
+  gu: {},
+  pa: {},
+  or: {},
+  ur: {},
 };
 
 // AI Coach preloaded Q&A database for immediate bilingual support
