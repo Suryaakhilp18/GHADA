@@ -7,20 +7,13 @@
 </p>
 
 <p align="center">
-  <a href="https://ghada-beige.vercel.app/">
-    <img src="https://img.shields.io/badge/Live%20Demo-GHADA-8B6914?style=for-the-badge" alt="Live Demo">
-  </a>
-  <a href="https://github.com/Suryaakhilp18/GHADA">
-    <img src="https://img.shields.io/badge/Source%20Code-GitHub-181717?style=for-the-badge&logo=github" alt="Source Code">
-  </a>
+  🚀 <a href="https://ghada-beige.vercel.app/"><strong>Live Demo</strong></a>
+  &nbsp;&nbsp;•&nbsp;&nbsp;
+  💻 <a href="https://github.com/Suryaakhilp18/GHADA"><strong>Source Code</strong></a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/React-18+-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React">
-  <img src="https://img.shields.io/badge/TypeScript-5+-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
-  <img src="https://img.shields.io/badge/Vite-6+-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite">
-  <img src="https://img.shields.io/badge/Tailwind%20CSS-3+-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS">
-  <img src="https://img.shields.io/badge/Deployment-Vercel-000000?style=flat-square&logo=vercel&logoColor=white" alt="Vercel">
+  ⚛️ React · 🔷 TypeScript · ⚡ Vite · 🎨 Tailwind CSS · ☁️ Vercel
 </p>
 
 ---
