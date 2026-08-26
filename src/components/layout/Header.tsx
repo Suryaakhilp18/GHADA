@@ -9,7 +9,7 @@ export const Header: React.FC<{ onOpenSearch: () => void }> = ({ onOpenSearch })
   const location = useLocation();
   const { user, isAuthenticated, logout, t } = useApp();
 
-  const navLinks = [
+  const authenticatedLinks = [
     { path: '/hub', label: 'Super-App Hub', icon: Layers },
     { path: '/dashboard', label: t('dashboard'), icon: Shield },
     { path: '/budget', label: 'AI Budget', icon: CreditCard },
@@ -18,16 +18,23 @@ export const Header: React.FC<{ onOpenSearch: () => void }> = ({ onOpenSearch })
     { path: '/health', label: 'Health', icon: Activity },
   ];
 
+  const publicLinks = [
+    { path: '/', label: 'Home' },
+    { path: '/about', label: 'About Us' },
+    { path: '/how-it-works', label: 'How It Works' },
+    { path: '/learn', label: 'Learn' },
+  ];
+
   return (
     <header className="sticky top-0 z-40 w-full bg-dark-bg/90 backdrop-blur-md border-b border-dark-border/60">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-3">
         {/* Left: Logo */}
         <Logo size="md" showTagline={false} />
 
-        {/* Desktop Navigation Links (Only shown when authenticated) */}
-        {isAuthenticated && (
-          <nav className="hidden lg:flex items-center gap-1">
-            {navLinks.map(link => {
+        {/* Navigation Links */}
+        <nav className="hidden lg:flex items-center gap-1">
+          {isAuthenticated ? (
+            authenticatedLinks.map(link => {
               const isActive = location.pathname === link.path;
               const Icon = link.icon;
               return (
@@ -44,9 +51,26 @@ export const Header: React.FC<{ onOpenSearch: () => void }> = ({ onOpenSearch })
                   {link.label}
                 </Link>
               );
-            })}
-          </nav>
-        )}
+            })
+          ) : (
+            publicLinks.map(link => {
+              const isActive = location.pathname === link.path;
+              return (
+                <Link
+                  key={link.path}
+                  to={link.path}
+                  className={`px-3 py-1.5 rounded-lg text-xs font-semibold tracking-wide transition-all ${
+                    isActive
+                      ? 'bg-gold/15 text-gold border border-gold/30'
+                      : 'text-ivory-dark hover:text-ivory hover:bg-dark-card'
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              );
+            })
+          )}
+        </nav>
 
         {/* Right: Search, Language, User/Login */}
         <div className="flex items-center gap-2 sm:gap-3">

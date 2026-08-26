@@ -1,7 +1,7 @@
 import { UserProfile, Transaction, Milestone, Goal, PartnerData, Language } from '../types';
 
 export const INITIAL_USER: UserProfile = {
-  name: 'Raju',
+  name: 'Surya Akhil',
   age: 24,
   occupation: 'Construction',
   incomeRange: '₹10,000–₹15,000',
@@ -399,12 +399,37 @@ export const AI_COACH_KNOWLEDGE: {
   te: string;
 }[] = [
   {
+    keywords: ['hello', 'hi', 'hey', 'greetings', 'namaste', 'good morning', 'good evening', 'హలో', 'నమస్తే', 'नमस्ते'],
+    en: "Hello! 👋 I am Ghada, your AI Financial Coach. How can I help you today? You can ask me about your savings progress, creating a budget, tracking expenses, managing debts, or checking scam messages.",
+    te: "నమస్తే! 👋 నేను ఘటా మీ AI ఫైనాన్షియల్ కోచ్. ఈ రోజు నేను మీకు ఎలా సహాయపడగలను? పొదుపు, బడ్జెటింగ్, ఖర్చులు, అప్పులు లేదా మోసపూరిత మెసేజ్ల గురించి నన్ను అడగవచ్చు.",
+  },
+  {
+    keywords: ['thanks', 'thank you', 'great', 'awesome', 'cool', 'nice', 'థాంక్స్', 'ధన్యవాదాలు'],
+    en: "You're very welcome! 😊 I am always here to keep your money safe and help you build a strong emergency fund. What else would you like to explore?",
+    te: "మీకు స్వాగతం! 😊 మీ నిధిని సురక్షితంగా ఉంచడానికి నేను ఎల్లప్పుడూ ఇక్కడ ఉంటాను. ఇంకా ఏమైనా తెలుసుకోవాలనుకుంటున్నారా?",
+  },
+  {
+    keywords: ['who are you', 'what can you do', 'what is ghada', 'help', 'features', 'నువ్వు ఎవరు'],
+    en: "I am Ghada — your 24/7 AI Financial Safety & Life-Assistance Companion! 🛡️ I help you save for emergencies, budget your income, track daily expenses, plan debt repayments, and verify suspicious scam messages.",
+    te: "నేను ఘటా (Ghada) — మీ 24/7 AI ఫైనాన్షియల్ సేఫ్టీ భాగస్వామిని! 🛡️ ఎమర్జెన్సీ ఫండ్ నిర్మించడం, బడ్జెట్ వేయడం, ఖర్చులు ట్రాక్ చేయడం, అప్పులు తీర్చడం మరియు మోసపూరిత మెసేజ్లను తనిఖీ చేయడంలో నేను సహాయపడతాను.",
+  },
+  {
+    keywords: ['debt', 'loan', 'loans', 'borrow', 'emi', 'lender', 'అప్పు', 'రుణం'],
+    en: "Ghada's core philosophy is: BORROW LAST. We recommend prioritizing high-interest debts (like informal lenders at 18%+ APR) first before taking any new loans. Check out our Debt Organizer module to build a step-by-step repayment plan.",
+    te: "ఘటా ముఖ్యాంశం: చివరిగా అప్పు చేయండి. అధిక వడ్డీకి తీసుకున్న అప్పులను మొదట తీర్చడానికి ప్రాధాన్యత ఇవ్వండి. అప్పుల రీపేమెంట్ ప్లాన్ కోసం డెట్ ఆర్గనైజర్ చూడండి.",
+  },
+  {
+    keywords: ['expense', 'expenses', 'spent', 'spending', 'cost', 'groceries', 'fuel', 'ఖర్చు'],
+    en: "Logging expenses daily helps you see where your money goes! You can type 'I spent ₹250 on fuel today' or visit the Expense Tracker module to track all your daily spending.",
+    te: "రోజూ ఖర్చులను రికార్డ్ చేయడం వల్ల మీ డబ్బు ఎక్కడికి పోతుందో స్పష్టంగా తెలుస్తుంది! 'ఈ రోజు ₹250 పెట్రోల్‌కు ఖర్చు చేశాను' అని టైప్ చేసి ఎక్స్‌పెన్స్ ట్రాకర్‌లో చూడండి.",
+  },
+  {
     keywords: ['how much', 'save', 'amount', 'daily', ' ఎంత '],
     en: "Even ₹20 or ₹50 a day makes a huge difference over time! Consistency matters far more than the starting amount. With your target of ₹5,000, saving ₹50 daily will get you fully protected in less than 3 months.",
     te: "రోజుకు ₹20 లేదా ₹50 దాచినా కూడా అది కాలక్రమేణా పెద్ద భద్రతను ఇస్తుంది! ప్రారంభించే మొత్తం కంటే రోజూ దాచడం ముఖ్యం. మీ ₹5,000 లక్ష్యానికి రోజుకు ₹50 దాచితే కేవలం 3 నెలల్లో మీ ఎమర్జెన్సీ ఫండ్ పూర్తవుతుంది.",
   },
   {
-    keywords: ['emergency fund', 'what is', 'need', 'ఎమర్జెన్సీ ఫండ్'],
+    keywords: ['emergency fund', 'what is', 'cushion', 'ఎమర్జెన్సీ ఫండ్'],
     en: "An emergency fund is your personal safety shield. It is money kept strictly for unexpected events like sudden illness, work interruption, or urgent repairs—so you never have to take high-interest loans.",
     te: "ఎమర్జెన్సీ ఫండ్ అనేది మీ వ్యక్తిగత భద్రతా కవచం. అనుకోని వైద్య ఖర్చులు, పనుల లేమి లేదా తక్షణ మరమ్మతుల కోసం మాత్రమే ఈ డబ్బును ఉంచుకుంటారు — తద్వారా మీరు అధిక వడ్డీకి అప్పులు చేయాల్సిన అవసరం రాదు.",
   },

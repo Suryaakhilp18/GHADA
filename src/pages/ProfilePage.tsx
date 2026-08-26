@@ -62,7 +62,7 @@ export const ProfilePage: React.FC = () => {
           <span>Demo Engine & Reset Controls</span>
         </h3>
         <p className="text-xs text-ivory-dark">
-          This prototype runs on local state. You can reload Raju's demo data or clear all custom savings transactions anytime.
+          This prototype runs on local state. You can reload your demo profile or clear all custom savings transactions anytime.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-3">
@@ -70,7 +70,7 @@ export const ProfilePage: React.FC = () => {
             onClick={loadDemoUser}
             className="px-5 py-2.5 rounded-xl bg-gold/15 border border-gold/40 text-gold text-xs font-bold hover:bg-gold/25 transition-all"
           >
-            Reload Raju Demo Profile
+            Reload Demo Profile
           </button>
           <button
             onClick={resetDemoData}

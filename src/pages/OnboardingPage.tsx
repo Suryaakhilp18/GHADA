@@ -10,7 +10,7 @@ export const OnboardingPage: React.FC = () => {
   const { updateUserProfile, setLanguage, user } = useApp();
 
   const [step, setStep] = useState<number>(1);
-  const [name, setName] = useState<string>('Raju');
+  const [name, setName] = useState<string>(user.name || 'Surya Akhil');
   const [occupation, setOccupation] = useState<Occupation>('Construction');
   const [incomeRange, setIncomeRange] = useState<IncomeRange>('₹10,000–₹15,000');
   const [incomePattern, setIncomePattern] = useState<IncomePattern>('Highly irregular');

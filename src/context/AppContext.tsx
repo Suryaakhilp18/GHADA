@@ -198,6 +198,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     if (username.trim().toLowerCase() === 'suryaakhilp' && pass === '28022023') {
       setIsAuthenticated(true);
       localStorage.setItem('ghada_is_authenticated', 'true');
+      setUser(prev => ({ ...prev, name: 'Surya Akhil' }));
       return true;
     }
     return false;

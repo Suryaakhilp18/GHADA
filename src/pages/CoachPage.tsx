@@ -62,8 +62,8 @@ export const CoachPage: React.FC = () => {
         responseContent = language === 'te' && matched.te ? matched.te : matched.en;
       } else {
         responseContent = language === 'te'
-          ? `మీరు మంచి ప్రశ్న అడిగారు! ఘటా నియమం ప్రకారం: ముందు దాచండి (Save First), తరువాత పెట్టుబడి (Invest Second), చివరిగా అప్పు (Borrow Last). మొదట మీ ₹5,000 ఎమర్జెన్సీ ఫండ్‌ను పూరించండి.`
-          : `Great question! Remember Ghada's core rule: SAVE FIRST, INVEST SECOND, BORROW LAST. Focus on building your ₹5,000 emergency fund cushion first, and small contributions of ₹20-₹50 daily will get you there safely.`;
+          ? `నమస్తే ${user.name}! ప్రస్తుతం మీ ఎమర్జెన్సీ ఫండ్‌లో ₹${currentBalance.toLocaleString()} ఉన్నాయి (లక్ష్యం ₹${user.emergencyTarget.toLocaleString()}). మీ బడ్జెట్, ఖర్చులు లేదా పొదుపు గురించి మీకు ఏమి తెలుసుకోవాలనుంది?`
+          : `Hello ${user.name}! 👋 I hear you! Currently, you have ₹${currentBalance.toLocaleString()} in your Emergency Fund (${Math.round((currentBalance / user.emergencyTarget) * 100)}% of your ₹${user.emergencyTarget.toLocaleString()} goal). How can I assist you specifically with your savings, budget, expenses, or debts today?`;
       }
 
       const coachMsg: ChatMessage = {

@@ -4,7 +4,6 @@ import { AppProvider, useApp } from './context/AppContext';
 import { Header } from './components/layout/Header';
 import { Footer } from './components/layout/Footer';
 import { BottomNav } from './components/layout/BottomNav';
-import { JudgeDemoBar } from './components/layout/JudgeDemoBar';
 import { CommandPalette } from './components/common/CommandPalette';
 
 import { LoginPage } from './pages/LoginPage';
@@ -59,17 +58,16 @@ export const AppContent: React.FC = () => {
         <Routes>
           <Route path="/login" element={<LoginPage />} />
 
-          {/* Protected Routes */}
-          <Route
-            path="/"
-            element={
-              <ProtectedRoute>
-                <LandingPage onOpenSaveModal={() => setIsSaveModalOpen(true)} />
-              </ProtectedRoute>
-            }
-          />
+          {/* Public Landing Page */}
+          <Route path="/" element={<LandingPage onOpenSaveModal={() => setIsSaveModalOpen(true)} />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/how-it-works" element={<HowItWorksPage />} />
+          <Route path="/learn" element={<LearnPage />} />
+          <Route path="/partner" element={<PartnerPage />} />
+          <Route path="/tools" element={<MoneyToolsPage />} />
+          <Route path="/fraud-safety" element={<FraudSafetyPage />} />
+
+          {/* Protected Application Routes */}
           <Route
             path="/signup"
             element={
@@ -124,8 +122,6 @@ export const AppContent: React.FC = () => {
               </ProtectedRoute>
             }
           />
-          <Route path="/learn" element={<LearnPage />} />
-          <Route path="/partner" element={<PartnerPage />} />
           <Route
             path="/profile"
             element={
@@ -184,8 +180,6 @@ export const AppContent: React.FC = () => {
               </ProtectedRoute>
             }
           />
-          <Route path="/tools" element={<MoneyToolsPage />} />
-          <Route path="/fraud-safety" element={<FraudSafetyPage />} />
           <Route
             path="/emergency-mode"
             element={
@@ -205,7 +199,7 @@ export const AppContent: React.FC = () => {
 
           <Route
             path="*"
-            element={<Navigate to={isAuthenticated ? "/dashboard" : "/login"} replace />}
+            element={<Navigate to={isAuthenticated ? "/dashboard" : "/"} replace />}
           />
         </Routes>
       </main>
@@ -215,12 +209,6 @@ export const AppContent: React.FC = () => {
 
       {/* Mobile Bottom Navigation */}
       {isAuthenticated && <BottomNav onOpenSaveModal={() => setIsSaveModalOpen(true)} />}
-
-      {/* 2-Minute Judge & Demo Control Bar */}
-      <JudgeDemoBar
-        onOpenSaveModal={() => setIsSaveModalOpen(true)}
-        onOpenEmergencyModal={() => setIsEmergencyModalOpen(true)}
-      />
 
       {/* Command Palette (Ctrl + K) */}
       <CommandPalette

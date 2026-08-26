@@ -19,6 +19,29 @@ export const processAIQuery = (
   // Helper formatting INR
   const fmt = (val: number) => `₹${val.toLocaleString('en-IN')}`;
 
+  // INTENT 0: Greetings & Small Talk
+  if (lower === 'hello' || lower === 'hi' || lower === 'hey' || lower.startsWith('hello') || lower.startsWith('hi ') || lower.includes('namaste')) {
+    return {
+      text: lang === 'te'
+        ? `నమస్తే ${user.name}! 👋 నేను ఘటా మీ AI ఫైనాన్షియల్ కోచ్. ఈ రోజు నేను మీకు ఎలా సహాయపడగలను?`
+        : `Hello ${user.name}! 👋 I am Ghada, your AI Financial Companion. How can I help you today? Ask me about your savings progress, creating a budget, tracking expenses, or checking scam messages.`,
+      detectedLanguage: lang,
+      isCodeSwitched: detection.isCodeSwitched,
+      navigationTarget: '/coach',
+    };
+  }
+
+  // INTENT 0.5: Gratitude
+  if (lower.includes('thank') || lower.includes('thanks') || lower.includes('great') || lower.includes('awesome')) {
+    return {
+      text: lang === 'te'
+        ? `మీకు స్వాగతం ${user.name}! 😊 మీ డబ్బును సురక్షితంగా ఉంచడానికి నేను ఎప్పుడూ సిద్ధంగా ఉంటాను.`
+        : `You're very welcome, ${user.name}! 😊 I'm always here to help you stay financially safe. Let me know if you need anything else!`,
+      detectedLanguage: lang,
+      isCodeSwitched: detection.isCodeSwitched,
+    };
+  }
+
   // INTENT 1: Expense Entry (e.g., "I spent ₹250 on fuel today" or "250 rupees for lunch")
   const expenseMatch = lower.match(/(?:spent|paid|kharcha|kharch)\s*₹?\s*(\d+)|₹\s*(\d+)\s*(?:for|on|kharcha)?\s*([a-z\s]+)/i);
   if (expenseMatch || lower.includes('spent') || lower.includes('kharcha')) {

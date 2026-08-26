@@ -8,28 +8,28 @@ export default {
     extend: {
       colors: {
         dark: {
-          bg: '#11131F',       // Rich vibrant midnight dark background
-          card: '#1B1E2E',     // Bright elevated card surface
-          elevated: '#24283D', // High contrast secondary surface
-          border: '#363B54',   // Crisp, clear border visibility
+          bg: '#0A0B10',       // Deep Obsidian Black
+          card: '#131520',     // Premium Glass Slate Surface
+          elevated: '#1C1F2E', // Secondary Elevated Surface
+          border: '#2A2E45',   // Subtle Luminous Border
         },
         ivory: {
-          DEFAULT: '#FFFFFF',  // Pure crisp white for maximum legibility & brightness
-          muted: '#E2E8F0',    // Bright readable text
-          dark: '#94A3B8',     // High contrast secondary text
+          DEFAULT: '#FFFFFF',  // Pure Crisp White
+          muted: '#E2E8F0',    // Soft Readable White
+          dark: '#94A3B8',     // Muted Silver Text
         },
         gold: {
-          DEFAULT: '#F59E0B',  // Radiant Amber Gold
-          light: '#FBBF24',    // Bright Gold highlight
-          dark: '#D97706',     // Deep Gold
-          glow: 'rgba(245, 158, 11, 0.25)',
+          DEFAULT: '#E5B869',  // Champagne Gold
+          light: '#F5D089',    // Light Gold Highlight
+          dark: '#C49845',     // Deep Gold Accent
+          glow: 'rgba(229, 184, 105, 0.2)',
         },
         bronze: {
-          DEFAULT: '#B45309',
-          dark: '#78350F',
+          DEFAULT: '#9E8050',
+          dark: '#6E5834',
         },
         terracotta: {
-          DEFAULT: '#EF4444',  // Vibrant Coral Red for emergency alerts
+          DEFAULT: '#EF4444',  // Vibrant Coral Red for Emergency Alerts
           muted: '#DC2626',
         }
       },
@@ -37,9 +37,9 @@ export default {
         sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
       },
       boxShadow: {
-        'gold-glow': '0 0 30px rgba(245, 158, 11, 0.3)',
-        'gold-sm': '0 0 12px rgba(245, 158, 11, 0.25)',
-        'card-bright': '0 10px 30px -10px rgba(0, 0, 0, 0.5), 0 0 15px rgba(245, 158, 11, 0.1)',
+        'gold-glow': '0 0 30px rgba(229, 184, 105, 0.25)',
+        'gold-sm': '0 0 12px rgba(229, 184, 105, 0.2)',
+        'card-bright': '0 10px 30px -10px rgba(0, 0, 0, 0.6), 0 0 15px rgba(229, 184, 105, 0.08)',
       }
     },
   },
