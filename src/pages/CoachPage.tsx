@@ -75,7 +75,7 @@ export const CoachPage: React.FC = () => {
 
       setMessages(prev => [...prev, coachMsg]);
       setIsThinking(false);
-    }, 700);
+    }, 150);
   };
 
   return (

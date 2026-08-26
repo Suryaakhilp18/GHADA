@@ -11,7 +11,7 @@ export const DocumentAnalyzerPage: React.FC = () => {
     setTimeout(() => {
       setIsAnalyzing(false);
       setAnalyzed(true);
-    }, 1200);
+    }, 250);
   };
 
   return (

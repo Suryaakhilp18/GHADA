@@ -56,7 +56,9 @@ const LOCAL_STORAGE_KEY = 'ghada_app_state_v2';
 const DESIGNER_CREDIT = 'Designed & Developed by Surya Akhil';
 
 export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [isAuthenticated, setIsAuthenticated] = useState<boolean>(true); // Logged in by default for smooth demo
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean>(() => {
+    return localStorage.getItem('ghada_is_authenticated') === 'true';
+  });
 
   const [user, setUser] = useState<UserProfile>(() => {
     const saved = localStorage.getItem(LOCAL_STORAGE_KEY);
@@ -195,6 +197,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   const login = (username: string, pass: string): boolean => {
     if (username.trim().toLowerCase() === 'suryaakhilp' && pass === '28022023') {
       setIsAuthenticated(true);
+      localStorage.setItem('ghada_is_authenticated', 'true');
       return true;
     }
     return false;
@@ -202,6 +205,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
 
   const logout = () => {
     setIsAuthenticated(false);
+    localStorage.removeItem('ghada_is_authenticated');
   };
 
   const setLanguage = (lang: Language) => {
@@ -294,11 +298,14 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     setRebuildTarget(2750);
     setLanguageState('en');
     setIsAuthenticated(true);
+    localStorage.setItem('ghada_is_authenticated', 'true');
   };
 
   const resetDemoData = () => {
     localStorage.removeItem(LOCAL_STORAGE_KEY);
-    loadDemoUser();
+    localStorage.removeItem('ghada_is_authenticated');
+    setIsAuthenticated(false);
+    setUser(INITIAL_USER);
   };
 
   const t = (key: string): string => {

@@ -34,7 +34,7 @@ export const AskGhadaAnything: React.FC = () => {
       } else {
         navigate('/coach');
       }
-    }, 600);
+    }, 150);
   };
 
   return (

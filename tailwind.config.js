@@ -8,37 +8,38 @@ export default {
     extend: {
       colors: {
         dark: {
-          bg: '#0D0D0D',
-          card: '#171717',
-          elevated: '#222222',
-          border: '#2A2A2A',
+          bg: '#11131F',       // Rich vibrant midnight dark background
+          card: '#1B1E2E',     // Bright elevated card surface
+          elevated: '#24283D', // High contrast secondary surface
+          border: '#363B54',   // Crisp, clear border visibility
         },
         ivory: {
-          DEFAULT: '#F6F1E8',
-          muted: '#D1C9BC',
-          dark: '#9A9285',
+          DEFAULT: '#FFFFFF',  // Pure crisp white for maximum legibility & brightness
+          muted: '#E2E8F0',    // Bright readable text
+          dark: '#94A3B8',     // High contrast secondary text
         },
         gold: {
-          DEFAULT: '#D4AF6A',
-          light: '#E6C88B',
-          dark: '#B38F48',
-          glow: 'rgba(212, 175, 106, 0.15)',
+          DEFAULT: '#F59E0B',  // Radiant Amber Gold
+          light: '#FBBF24',    // Bright Gold highlight
+          dark: '#D97706',     // Deep Gold
+          glow: 'rgba(245, 158, 11, 0.25)',
         },
         bronze: {
-          DEFAULT: '#9E8050',
-          dark: '#6E5834',
+          DEFAULT: '#B45309',
+          dark: '#78350F',
         },
         terracotta: {
-          DEFAULT: '#A85D4D',
-          muted: '#804235',
+          DEFAULT: '#EF4444',  // Vibrant Coral Red for emergency alerts
+          muted: '#DC2626',
         }
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
       },
       boxShadow: {
-        'gold-glow': '0 0 25px rgba(212, 175, 106, 0.18)',
-        'gold-sm': '0 0 10px rgba(212, 175, 106, 0.2)',
+        'gold-glow': '0 0 30px rgba(245, 158, 11, 0.3)',
+        'gold-sm': '0 0 12px rgba(245, 158, 11, 0.25)',
+        'card-bright': '0 10px 30px -10px rgba(0, 0, 0, 0.5), 0 0 15px rgba(245, 158, 11, 0.1)',
       }
     },
   },

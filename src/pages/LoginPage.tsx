@@ -2,49 +2,74 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useApp } from '../context/AppContext';
 import { Logo } from '../components/common/Logo';
-import { Lock, User, ArrowRight, ShieldCheck, Sparkles } from 'lucide-react';
+import { Lock, User, ArrowRight, ShieldCheck, Sparkles, KeyRound } from 'lucide-react';
 
 export const LoginPage: React.FC = () => {
   const navigate = useNavigate();
   const { login, designerCredit } = useApp();
 
-  const [username, setUsername] = useState('Suryaakhilp');
-  const [password, setPassword] = useState('28022023');
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
   const handleLoginSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    if (!username.trim() || !password.trim()) {
+      setError('Please enter both Username and Password.');
+      return;
+    }
+
     if (login(username, password)) {
       navigate('/dashboard');
     } else {
-      setError('Invalid username or password. (Demo: Suryaakhilp / 28022023)');
+      setError('Invalid credentials. Use Username: Suryaakhilp | Password: 28022023');
     }
   };
 
-  const handleQuickDemoLogin = () => {
-    login('Suryaakhilp', '28022023');
-    navigate('/dashboard');
+  const handleFillDemoCredentials = () => {
+    setUsername('Suryaakhilp');
+    setPassword('28022023');
+    setError('');
   };
 
   return (
-    <div className="min-h-[80vh] flex flex-col items-center justify-center px-4 py-12">
-      <div className="w-full max-w-md space-y-8">
-        {/* Header */}
-        <div className="text-center space-y-3">
+    <div className="min-h-[85vh] flex flex-col items-center justify-center px-4 py-8">
+      <div className="w-full max-w-md space-y-6">
+        {/* Logo & Header */}
+        <div className="text-center space-y-2">
           <Logo size="lg" showTagline={true} />
-          <h1 className="text-2xl font-extrabold text-ivory tracking-tight mt-2">
-            Welcome to Ghada
+          <h1 className="text-2xl font-extrabold text-ivory tracking-tight mt-3">
+            Sign In to Ghada
           </h1>
           <p className="text-xs text-ivory-dark">
-            Your AI-Powered Financial Safety & Life-Assistance Platform
+            Your Multilingual AI Financial Safety Companion
           </p>
         </div>
 
-        {/* Card */}
-        <div className="p-8 rounded-3xl bg-dark-card border border-gold/30 shadow-2xl space-y-6">
+        {/* Demo Credentials Hint Banner */}
+        <div className="p-3.5 rounded-2xl bg-gold/10 border border-gold/30 text-xs text-gold flex items-center justify-between gap-2 shadow-gold-sm">
+          <div className="flex items-center gap-2">
+            <KeyRound className="w-4 h-4 text-gold shrink-0" />
+            <div>
+              <span className="font-bold">Demo Login Credentials</span>
+              <div className="text-[11px] text-ivory-muted font-mono">
+                User: <span className="text-gold font-bold">Suryaakhilp</span> | Pass: <span className="text-gold font-bold">28022023</span>
+              </div>
+            </div>
+          </div>
+          <button
+            onClick={handleFillDemoCredentials}
+            className="px-2.5 py-1 rounded-lg bg-gold text-dark-bg text-[10px] font-extrabold hover:brightness-110 shrink-0"
+          >
+            Auto-Fill
+          </button>
+        </div>
+
+        {/* Login Form Card */}
+        <div className="p-8 rounded-3xl bg-dark-card border border-gold/30 shadow-2xl space-y-5">
           <form onSubmit={handleLoginSubmit} className="space-y-4">
             {error && (
-              <div className="p-3 rounded-xl bg-terracotta/20 border border-terracotta/40 text-xs text-ivory text-center">
+              <div className="p-3 rounded-xl bg-terracotta/20 border border-terracotta/40 text-xs text-ivory text-center font-medium">
                 {error}
               </div>
             )}
@@ -59,8 +84,8 @@ export const LoginPage: React.FC = () => {
                   type="text"
                   value={username}
                   onChange={e => setUsername(e.target.value)}
-                  className="w-full pl-10 pr-4 py-3 rounded-xl bg-dark-elevated border border-dark-border text-ivory text-xs font-semibold focus:outline-none focus:border-gold"
-                  placeholder="Suryaakhilp"
+                  className="w-full pl-10 pr-4 py-3 rounded-xl bg-dark-elevated border border-dark-border text-ivory text-xs font-semibold placeholder-ivory-dark/40 focus:outline-none focus:border-gold"
+                  placeholder="Enter username (e.g. Suryaakhilp)"
                 />
               </div>
             </div>
@@ -75,8 +100,8 @@ export const LoginPage: React.FC = () => {
                   type="password"
                   value={password}
                   onChange={e => setPassword(e.target.value)}
-                  className="w-full pl-10 pr-4 py-3 rounded-xl bg-dark-elevated border border-dark-border text-ivory text-xs font-semibold focus:outline-none focus:border-gold"
-                  placeholder="••••••••"
+                  className="w-full pl-10 pr-4 py-3 rounded-xl bg-dark-elevated border border-dark-border text-ivory text-xs font-semibold placeholder-ivory-dark/40 focus:outline-none focus:border-gold"
+                  placeholder="Enter password (e.g. 28022023)"
                 />
               </div>
             </div>
@@ -90,20 +115,9 @@ export const LoginPage: React.FC = () => {
             </button>
           </form>
 
-          {/* Quick Demo Login Button */}
-          <div className="pt-2 border-t border-dark-border">
-            <button
-              onClick={handleQuickDemoLogin}
-              className="w-full py-3 rounded-xl bg-gold/15 border border-gold/40 text-gold text-xs font-bold hover:bg-gold/25 transition-all flex items-center justify-center gap-2"
-            >
-              <Sparkles className="w-4 h-4" />
-              <span>1-Click Quick Demo Login (Suryaakhilp)</span>
-            </button>
-          </div>
-
-          <div className="text-[11px] text-ivory-dark text-center flex items-center justify-center gap-1.5 pt-2">
+          <div className="text-[11px] text-ivory-dark text-center flex items-center justify-center gap-1.5 pt-2 border-t border-dark-border">
             <ShieldCheck className="w-3.5 h-3.5 text-gold" />
-            <span>Demo Authentication • No real money is moved</span>
+            <span>Protected Demo Environment • Save First. Invest Second. Borrow Last.</span>
           </div>
         </div>
 
